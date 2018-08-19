@@ -21,12 +21,12 @@ describe('<InfoSection />', () => {
 	});
 
 	it('Renders all list items', () => {
-    const orderedList = `
+    const listItems = `
 	    	<li>I pick a <strong>random secret number</strong> between 1 to 100 and keep it hidden.</li>
 	      <li>You need to <strong>guess</strong> until you can find the hidden secret number.</li>
 	      <li>You will <strong>get feedback</strong> on how close ("hot") or far ("cold") your guess is.</li>`;
-    const wrapper = shallow(<InfoSection orderedList={orderedList} />);
-    expect(wrapper.contains(<ol>{orderedList}</ol>)).toEqual(true);
+    const wrapper = shallow(<InfoSection listItems={listItems} />);
+    expect(wrapper.contains(<li>{listItems}</ol>)).toEqual(<li>I pick a <strong>random secret number</strong> between 1 to 100 and keep it hidden.</li><li>You need to <strong>guess</strong> until you can find the hidden secret number.</li><li>You will <strong>get feedback</strong> on how close ("hot") or far ("cold") your guess is.</li>`);
 	});
 
 });
