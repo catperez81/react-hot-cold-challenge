@@ -2,6 +2,9 @@ import React from 'react';
 import {shallow, mount, render} from 'enzyme';
 import InfoSection from './info-section';
 
+
+// getting Unterminated string constant on line 35 //
+
 describe('<InfoSection />', () => {
 
   it('Renders without crashing', () => {

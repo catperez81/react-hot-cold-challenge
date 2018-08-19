@@ -8,5 +8,6 @@ it('Renders without crashing', () => {
 
 it('Renders the restart button initially', () => {
 	const wrapper = shallow(<TopNav />);
+	// getting expect(received).toEqual(expected) error on fail //
 	expect(wrapper.hasClass('new')).toEqual(true);
 });

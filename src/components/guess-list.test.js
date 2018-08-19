@@ -5,3 +5,5 @@ import GuessList from './guess-list';
 it('Renders without crashing', () => {
     shallow(<GuessList />);
 });
+
+// getting cannot read property 'map' of undefined //
