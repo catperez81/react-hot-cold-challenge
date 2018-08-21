@@ -5,17 +5,17 @@ import TopNav from './top-nav';
 it('Renders the restart button initially', () => {
 	const wrapper = shallow(<TopNav />);
 	// getting expect(received).toEqual(expected) error on fail //
-	expect(wrapper.hasClass('new')).toEqual(true);
+	expect(wrapper.find('#newGame').hasClass('new')).toEqual(true);
 });
 
 it('Renders the feedback link initially', () => {
 	const wrapper = shallow(<TopNav />);
 	// getting expect(received).toEqual(expected) error on fail //
-	expect(wrapper.hasClass('what')).toEqual(true);
+	expect(wrapper.find('#howToPlay').hasClass('what')).toEqual(true);
 });
 
 it('Renders the status initially', () => {
 	const wrapper = shallow(<TopNav />);
 	// getting expect(received).toEqual(expected) error on fail //
-	expect(wrapper.hasClass('status-link')).toEqual(true);
+	expect(wrapper.find('#getStatus').hasClass('status-link')).toEqual(true);
 });

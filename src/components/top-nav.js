@@ -7,7 +7,8 @@ export default function TopNav(props) {
     <nav>
       <ul className="clearfix">
         <li>
-          <a 
+          <a
+            id="howToPlay" 
             href="#what" 
             className="what"
             aria-label="How to play"
@@ -17,6 +18,7 @@ export default function TopNav(props) {
         </li>
         <li>
           <a
+            id="newGame"
             href="#feedback"
             className="new"
             aria-label="Start a new game"
@@ -27,6 +29,7 @@ export default function TopNav(props) {
         </li>
         <li>
           <a
+            id="getStatus"
             href="#get-status"
             /* the `visuallyhidden` class hides an element 
             while leaving it available to screen reader users  */
